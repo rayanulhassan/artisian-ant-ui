@@ -56,6 +56,9 @@
           "browserTarget": "artisian-ant-ui:build:development"
         }
       },
+      "options": {
+        "port": 4203
+      },
       "defaultConfiguration": "development"
     },
     "extract-i18n": {
@@ -75,7 +78,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectName}"],
       "options": {
-        "jestConfig": "jest.config.ts",
+        "jestConfig": "jest.config.app.ts",
         "passWithNoTests": true
       },
       "configurations": {
